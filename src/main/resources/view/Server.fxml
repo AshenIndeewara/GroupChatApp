@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="444.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chatapp02.controller.ServerController">
+   <children>
+      <TextArea fx:id="txtArea" layoutX="124.0" layoutY="43.0" prefHeight="271.0" prefWidth="426.0" />
+      <Label layoutX="305.0" layoutY="7.0" text="Server">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView" fitHeight="76.0" fitWidth="111.0" layoutX="127.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="displayImageView" fitHeight="76.0" fitWidth="111.0" layoutX="562.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnAddAnotherUser" layoutX="384.0" layoutY="349.0" mnemonicParsing="false" onAction="#ClickOnBtnAddAnotherUser" text="Add another user" />
+      <TextField fx:id="clientName" layoutX="199.0" layoutY="349.0" onKeyReleased="#enterBtn" promptText="Client Name" />
+   </children>
+</AnchorPane>
